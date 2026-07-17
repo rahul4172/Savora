@@ -194,7 +194,7 @@ export default function SpecialtiesSection() {
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.2}
-              onDragEnd={(e, { offset }) => {
+              onDragEnd={(_, { offset }) => {
                 if (offset.x < -50) nextSlide();
                 else if (offset.x > 50) prevSlide();
               }}

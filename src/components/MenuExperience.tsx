@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Leaf, Flame, Clock, ChefHat, Plus, Minus, Star, ArrowRight, 
-  UtensilsCrossed, Wine, Fish, Coffee, Cake, MapPin, 
+  Leaf, Flame, Clock, Plus, Minus, Star, ArrowRight, 
+  UtensilsCrossed, Wine, Fish, Coffee, Cake, 
   CalendarHeart, Clock4, Check, ChevronUp, ChevronDown
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { Star, CheckCircle, Award, TrendingUp, MapPin } from 'lucide-react';
 import styles from './GuestStories.module.css';
 

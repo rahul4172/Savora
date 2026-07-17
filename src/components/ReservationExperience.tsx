@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Calendar, Clock, User, Wine, Gift, FileText, ChevronDown, ArrowRight, ShieldCheck, 
   Car, DoorOpen, Music, ChefHat, CheckCircle, Phone, Headset, Info, Flower2,
-  Sparkles, Leaf, Flame, Plus, Minus, X
+  Sparkles, Flame, Plus, Minus, X
 } from 'lucide-react';
 import styles from './ReservationExperience.module.css';
 
