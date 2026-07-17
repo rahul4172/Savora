@@ -1,0 +1,61 @@
+/* Global utility classes */
+.glass-panel {
+  background: var(--color-glass);
+  border: var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-radius: 16px;
+  box-shadow: var(--shadow-premium);
+}
+
+.btn-primary {
+  background: var(--gradient-gold);
+  color: #090909;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-glow);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-primary:hover {
+  background: var(--gradient-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  background: rgba(212, 175, 55, 0.05);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.section-padding {
+  padding: 120px 0;
+}

@@ -1,0 +1,505 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Background Layers */
+.backgroundWrapper {
+  position: absolute;
+  top: -5%; left: -5%; width: 110%; height: 110%;
+  z-index: 1;
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+.bgGradient {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  /* Cinematic lighting gradient: dark on left/bottom, soft warm glow on right */
+  background: radial-gradient(circle at 75% 40%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+              linear-gradient(90deg, rgba(9, 9, 9, 0.95) 0%, rgba(9, 9, 9, 0.6) 45%, rgba(9, 9, 9, 0.2) 100%),
+              linear-gradient(0deg, rgba(9, 9, 9, 1) 0%, transparent 30%);
+}
+
+.bgVignette {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  box-shadow: inset 0 0 250px rgba(0,0,0,0.9);
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background: var(--color-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+  filter: blur(1px);
+}
+
+/* Layout */
+.editorialLayout {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px; /* Offset for navbar */
+}
+
+/* Left Typography */
+.textContent {
+  width: 55%;
+  max-width: 700px;
+}
+
+.luxuryLabel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.goldLine {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.titleGroup {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.mainHeading {
+  font-family: var(--font-heading);
+  font-size: 130px;
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.scriptHeading {
+  position: absolute;
+  font-family: var(--font-script);
+  font-size: 160px;
+  color: var(--color-gold);
+  font-weight: 400;
+  top: 60px;
+  left: 140px;
+  text-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.poeticDesc {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 450px;
+  margin-bottom: 64px;
+}
+
+/* Buttons */
+.buttonGroup {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.btnPremium {
+  position: relative;
+  padding: 20px 48px;
+  background: linear-gradient(135deg, #D4AF37 0%, #A67C00 100%);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(.19,1,.22,1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.btnPremium span {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btnGlow {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle at center, rgba(255,255,255,0.4) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+.btnPremium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 50px rgba(212, 175, 55, 0.3), inset 0 1px 1px rgba(255,255,255,0.6);
+}
+.btnPremium:hover .btnGlow {
+  opacity: 1;
+}
+
+.btnGlass {
+  padding: 20px 48px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(212,175,55,0.3);
+  border-radius: 4px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.5s cubic-bezier(.19,1,.22,1);
+  backdrop-filter: blur(10px);
+}
+
+.btnGlass:hover {
+  background: rgba(212,175,55,0.1);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+  transform: translateY(-4px);
+}
+
+/* Social Proof */
+.socialProof {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.proofItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.proofIcon {
+  color: var(--color-gold);
+}
+
+.proofDivider {
+  width: 1px;
+  height: 24px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* Right Concierge */
+.conciergeWrapper {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.conciergeCard {
+  width: 420px;
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(40px) saturate(120%);
+  -webkit-backdrop-filter: blur(40px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 48px 40px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05);
+  transform-style: preserve-3d;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  color: var(--color-gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  padding-bottom: 24px;
+}
+
+/* Animated Live Pulse */
+.livePulse {
+  position: relative;
+  width: 6px; height: 6px;
+}
+.pulseDot {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: var(--color-gold);
+  border-radius: 50%;
+  z-index: 2;
+}
+.pulseRing {
+  position: absolute;
+  top: -4px; left: -4px; width: 14px; height: 14px;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  animation: pulseAnim 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulseAnim {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* Inputs */
+.inputGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.luxuryInput {
+  position: relative;
+}
+
+.luxuryInput label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.55rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.selectBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.selectBox:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.goldChevron {
+  color: rgba(197, 160, 89, 0.6);
+  transition: color 0.3s;
+}
+.selectBox:hover .goldChevron {
+  color: var(--color-gold);
+}
+
+/* Custom Luxury Dropdowns */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 8px;
+  z-index: 50;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  color: rgba(255,255,255,0.7);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.dropdownItem:hover {
+  background: rgba(197, 160, 89, 0.1);
+  color: var(--color-gold);
+  padding-left: 20px;
+}
+
+/* Tabs */
+.experienceTabs {
+  display: flex;
+  gap: 4px;
+  background: rgba(0,0,0,0.6);
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.02);
+  margin-top: 4px;
+}
+
+.tab, .tabActive {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.tab {
+  color: rgba(255,255,255,0.4);
+}
+
+.tab:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.02);
+}
+
+.tabActive {
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Check btn */
+.btnCheck {
+  width: 100%;
+  margin-top: 40px;
+  padding: 18px;
+  background: var(--gradient-gold);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #000;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.5s cubic-bezier(.19,1,.22,1);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.btnCheck:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,0.5), 0 15px 30px rgba(197, 160, 89, 0.2);
+  background: var(--gradient-gold-hover);
+}
+
+.availabilityText {
+  margin-top: 24px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.goldDot {
+  width: 4px; height: 4px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Scroll Indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.scrollLineWrapper {
+  width: 1px;
+  height: 60px;
+  background: rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollLine {
+  position: absolute;
+  left: 0; top: 0; width: 100%; height: 0%;
+  background: var(--color-gold);
+}
+
+.scrollText {
+  font-size: 0.6rem;
+  color: var(--color-gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .editorialLayout { flex-direction: column; justify-content: center; align-items: center; }
+  .textContent { width: 100%; text-align: center; align-items: center; display: flex; flex-direction: column; }
+  .conciergeWrapper { display: none; }
+  .mainHeading { font-size: 90px; }
+  .scriptHeading { font-size: 110px; top: 40px; left: 50%; transform: translateX(-30%); }
+}
+
+@media (max-width: 1024px) {
+  .mainHeading { font-size: 80px; }
+  .scriptHeading { font-size: 90px; top: 30px; }
+}
+
+@media (max-width: 768px) {
+  .hero { min-height: 100svh; }
+  .mainHeading { font-size: 56px; }
+  .scriptHeading { font-size: 64px; top: 20px; left: 50%; transform: translateX(-50%); text-align: center; width: 100%;}
+  .buttonGroup { flex-direction: column; gap: 16px; margin-bottom: 40px; width: 100%; padding: 0 20px; }
+  .socialProof { flex-direction: column; gap: 16px; }
+  .proofDivider { width: 50px; height: 1px; }
+  .poeticDesc { font-size: 0.95rem; padding: 0 20px; }
+  .luxuryLabel { margin-bottom: 32px; }
+}
+
+@media (max-width: 480px) {
+  .mainHeading { font-size: 42px; }
+  .scriptHeading { font-size: 48px; top: 10px; }
+  .btnPremium, .btnGlass { padding: 16px 24px; width: 100%; text-align: center; }
+  .editorialLayout { padding-top: 60px; }
+}

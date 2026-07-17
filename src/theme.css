@@ -1,0 +1,82 @@
+:root {
+  /* Pixel-perfect Ultra Premium Theme - Refined to Champagne Gold */
+  --color-bg: #050505; /* Deeper black */
+  --color-surface: #0a0a0a;
+  --color-card: #0f0f0f;
+  
+  /* Refined Champagne Gold - Looks far more expensive than mustard yellow */
+  --color-gold: #C5A059; 
+  --color-gold-hover: #E2C275;
+  --color-text: #F5F5F5;
+  --color-text-muted: #A0A0A0;
+  --color-success: #00D26A;
+  
+  --color-border: rgba(197, 160, 89, 0.15);
+  --color-glass: rgba(255, 255, 255, 0.02);
+
+  --gradient-gold: linear-gradient(135deg, #C5A059 0%, #8C6D31 100%);
+  --gradient-gold-hover: linear-gradient(135deg, #E2C275 0%, #C5A059 100%);
+
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+  
+  --shadow-premium: 0 30px 60px rgba(0, 0, 0, 0.8);
+  --shadow-glow: 0 10px 30px rgba(197, 160, 89, 0.15);
+
+  --glass-border: 1px solid rgba(255, 255, 255, 0.04);
+  --glass-blur: blur(24px) saturate(120%);
+  
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: rgba(197, 160, 89, 0.3); border-radius: 4px; }

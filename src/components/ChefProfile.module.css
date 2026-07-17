@@ -1,0 +1,339 @@
+.section {
+  position: relative;
+  background: var(--color-bg);
+  padding: 80px 0 40px 0;
+  overflow: hidden;
+}
+
+/* Background */
+.radialGlow {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.04) 0%, transparent 60%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decorLine1 {
+  position: absolute;
+  right: 120px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(197, 160, 89, 0.15), transparent);
+}
+
+.decorLine2 {
+  position: absolute;
+  top: 200px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, rgba(197, 160, 89, 0.05), transparent);
+}
+
+/* Typography */
+.label {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  gap: 5%;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 48px;
+}
+
+/* Left Side */
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.story {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 90%;
+}
+
+.infoStack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+  border-left: 1px solid rgba(197, 160, 89, 0.2);
+  padding-left: 24px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.infoIcon {
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+}
+
+.infoText {
+  color: rgba(255,255,255,0.8);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Signature Block */
+.signatureBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.signatureSVGWrapper {
+  width: 250px;
+  height: 100px;
+  margin-bottom: 8px;
+  margin-left: -20px; /* Offset for aesthetic alignment */
+}
+
+.signatureSvg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.3));
+}
+
+.signatureCaption {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.signatureSubCaption {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.thinDivider {
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(to right, var(--color-gold), transparent);
+}
+
+/* Right Side - Portrait */
+.rightCol {
+  position: relative;
+  width: 100%;
+  height: 520px;
+}
+
+.imageMask {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.8);
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.imageVignette {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle, transparent 50%, rgba(5,5,5,0.6) 100%);
+  pointer-events: none;
+}
+
+/* Floating Glass Cards */
+.glassCard {
+  position: absolute;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.15);
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6), inset 0 0 15px rgba(197, 160, 89, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.cardCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardSmall {
+  color: rgba(255,255,255,0.5);
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cardMedium {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+}
+
+.cardLarge {
+  color: var(--color-gold);
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.cardGoldIcon {
+  color: var(--color-gold);
+}
+
+/* Positions */
+.card1 {
+  top: 15%;
+  left: -24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card2 {
+  top: 45%;
+  right: -32px;
+}
+
+.card3 {
+  bottom: 20%;
+  left: -16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card4 {
+  bottom: 8%;
+  right: 16px;
+}
+
+/* Oversized Editorial Quote */
+.quoteBlock {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 40px 0;
+  z-index: 2;
+}
+
+.quoteWord {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.quoteWord:nth-child(even) {
+  color: rgba(255,255,255,0.7);
+}
+
+.quoteWord:nth-child(5n) {
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+/* Bottom Transition */
+.bottomTransition {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, rgba(5,5,5,1));
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: 80px; }
+  .heading { font-size: 3rem; }
+  .quoteWord { font-size: 2.5rem; }
+  .rightCol { height: 600px; }
+  .card1 { left: -10px; }
+  .card2 { right: -10px; }
+  .card3 { left: -10px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 0 20px 0; }
+  .rightCol { height: 500px; }
+  .glassCard { padding: 12px 16px; gap: 12px; }
+  .cardLarge { font-size: 1.2rem; }
+  .cardMedium { font-size: 0.85rem; }
+  .cardSmall { font-size: 0.5rem; }
+  .card1 { left: 10px; top: 10%; }
+  .card2 { right: 10px; top: 35%; }
+  .card3 { left: 10px; bottom: 25%; }
+  .card4 { right: 10px; bottom: 10%; }
+}
+
+@media (max-width: 480px) {
+  .heading { font-size: 2.5rem; }
+  .story { font-size: 0.9rem; max-width: 100%; }
+  .rightCol { height: 400px; margin: 0 -10px; width: calc(100% + 20px); border-radius: 0; }
+  .imageMask { border-radius: 0; }
+  .glassCard { padding: 8px 12px; gap: 8px; backdrop-filter: blur(8px); }
+  .cardLarge { font-size: 1rem; }
+  .cardMedium { font-size: 0.75rem; }
+  .cardSmall { font-size: 0.45rem; }
+  .quoteWord { font-size: 1.8rem; }
+  .signatureSVGWrapper { width: 200px; }
+}
