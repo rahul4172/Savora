@@ -119,10 +119,7 @@ export default function GuestStories() {
           <h1 className={styles.mainTitle}>
             Every Visit<br />
             Leaves<br />
-            <span className={styles.relativeBlock}>
-              A Story.
-              <span className={styles.handwritten}>Unforgettable</span>
-            </span>
+            A Story.
           </h1>
 
           <p className={styles.intro}>
