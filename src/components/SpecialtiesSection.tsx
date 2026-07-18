@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useRef } from 'react';
+import { motion, useScroll } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styles from './SpecialtiesSection.module.css';
 import { ArrowRight, ArrowLeft, Heart, Flame, WheatOff, Leaf, ChefHat, Award, Plus, Sparkles } from 'lucide-react';
@@ -111,14 +111,18 @@ const features = [
 ];
 
 export default function SpecialtiesSection() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const maxIndex = Math.max(0, dishes.length - 3);
-
-  const nextSlide = () => setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
-  const prevSlide = () => setCurrentIndex(prev => Math.max(prev - 1, 0));
+  const containerRef = useRef<HTMLDivElement>(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  
+  const scrollContainer = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = direction === 'left' ? -350 : 350;
+      carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} ref={containerRef}>
       {/* Background Floral Overlay (simulated with large faint script or gradient) */}
       <div className={styles.bgGlow}></div>
       
@@ -154,8 +158,7 @@ export default function SpecialtiesSection() {
             <Link to="/menu" className={styles.linkMenu}>
               PRE-SELECT YOUR DISH <ArrowRight size={16} />
             </Link>
-            
-            <div className={styles.socialAndNav}>
+             <div className={styles.socialAndNav}>
               <div className={styles.socialProof}>
                 <div className={styles.avatars}>
                   <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="Guest" />
@@ -170,14 +173,14 @@ export default function SpecialtiesSection() {
               
               <div className={styles.navControls}>
                 <button 
-                  className={currentIndex === 0 ? styles.navBtn : styles.navBtnActive}
-                  onClick={prevSlide}
+                  className={styles.navBtn}
+                  onClick={() => scrollContainer('left')}
                 >
                   <ArrowLeft size={16} />
                 </button>
                 <button 
-                  className={currentIndex === maxIndex ? styles.navBtn : styles.navBtnActive}
-                  onClick={nextSlide}
+                  className={styles.navBtn}
+                  onClick={() => scrollContainer('right')}
                 >
                   <ArrowRight size={16} />
                 </button>
@@ -186,21 +189,8 @@ export default function SpecialtiesSection() {
           </motion.div>
 
           {/* RIGHT COLUMN - Carousel Cards */}
-          <div className={styles.carouselWrapper}>
-            <motion.div 
-              className={styles.rightCol}
-              animate={{ x: `calc(-${currentIndex * (100 / 3)}% - ${currentIndex * 8}px)` }}
-              transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.2}
-              onDragEnd={(_, { offset }) => {
-                if (offset.x < -50) nextSlide();
-                else if (offset.x > 50) prevSlide();
-              }}
-              style={{ cursor: 'grab' }}
-              whileTap={{ cursor: 'grabbing' }}
-            >
+          <div className={styles.carouselWrapper} ref={carouselRef}>
+            <div className={styles.rightCol}>
               {dishes.map((dish, i) => (
                 <motion.div 
                   key={dish.id} 
@@ -247,7 +237,7 @@ export default function SpecialtiesSection() {
                 </div>
               </motion.div>
             ))}
-            </motion.div>
+            </div>
           </div>
 
         </div>
