@@ -488,9 +488,9 @@
 
 @media (max-width: 768px) {
   .hero { min-height: 100svh; }
-  .editorialLayout { padding-top: 140px; padding-bottom: 160px; }
+  .editorialLayout { padding-top: 140px; padding-bottom: 160px; justify-content: flex-start; }
   .mainHeading { font-size: 56px; }
-  .scriptHeading { font-size: 64px; top: 35px; left: 50%; transform: translateX(-50%); text-align: center; width: 100%;}
+  .scriptHeading { font-size: 64px; top: 50px; left: 50%; transform: translateX(-50%); text-align: center; width: 100%;}
   .titleGroup { margin-bottom: 60px; }
   .buttonGroup { flex-direction: column; gap: 16px; margin-bottom: 40px; width: 100%; padding: 0 20px; }
   .socialProof { flex-direction: column; gap: 16px; }
@@ -501,7 +501,7 @@
 
 @media (max-width: 480px) {
   .mainHeading { font-size: 42px; }
-  .scriptHeading { font-size: 48px; top: 28px; }
+  .scriptHeading { font-size: 48px; top: 42px; }
   .titleGroup { margin-bottom: 50px; }
   .btnPremium, .btnGlass { padding: 16px 24px; width: 100%; text-align: center; }
   .editorialLayout { padding-top: 120px; padding-bottom: 140px; }
