@@ -361,6 +361,13 @@
     width: 100%;
     overflow-x: auto;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    border-radius: 12px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .tabsContainer::-webkit-scrollbar {
+    display: none;
   }
 }
 @media (max-width: 768px) {
