@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import MenuExperience from '../components/MenuExperience';
 
 export default function MenuPage() {
@@ -9,10 +10,8 @@ export default function MenuPage() {
         <MenuExperience />
       </main>
       
-      {/* Footer Placeholder */}
-      <footer style={{ padding: '60px 40px', textAlign: 'center', color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', borderTop: '1px solid rgba(197, 160, 89, 0.1)', background: '#050505' }}>
-        <p>© 2026 Savora Fine Dining. All Rights Reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
+

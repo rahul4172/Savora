@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import GalleryExperience from '../components/GalleryExperience';
 
 export default function GalleryPage() {
@@ -8,9 +9,8 @@ export default function GalleryPage() {
       <main style={{ paddingTop: '80px' }}>
         <GalleryExperience />
       </main>
-      <footer style={{ padding: '40px', textAlign: 'center', color: 'var(--color-text-muted)', fontSize: '0.8rem', borderTop: '1px solid var(--color-border)' }}>
-        <p>© 2026 Savora Fine Dining. All Rights Reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
+

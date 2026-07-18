@@ -1,0 +1,249 @@
+.footer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+.topBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.4), transparent);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 40px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Brand Column */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.logoIcon {
+  color: var(--color-gold);
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.logoSub {
+  font-size: 0.6rem;
+  color: var(--color-gold);
+  letter-spacing: 3px;
+  margin-top: 4px;
+}
+
+.brandDesc {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: var(--color-gold);
+  color: #000;
+  border-color: var(--color-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(197, 160, 89, 0.2);
+}
+
+/* Link Columns */
+.colTitle {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linkList a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.linkList a:hover {
+  color: var(--color-gold);
+  transform: translateX(4px);
+}
+
+.contactText {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.goldText {
+  color: var(--color-gold);
+  font-weight: 400;
+}
+
+/* Newsletter */
+.newsletterCol .contactText {
+  margin-bottom: 24px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  transition: border-color 0.3s;
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--color-gold);
+}
+
+.emailInput {
+  background: transparent;
+  border: none;
+  color: #fff;
+  flex: 1;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.emailInput::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.submitBtn {
+  background: transparent;
+  border: none;
+  color: var(--color-gold);
+  cursor: pointer;
+  padding: 0 8px;
+  transition: transform 0.3s;
+}
+
+.submitBtn:hover {
+  transform: translateX(4px);
+}
+
+/* Bottom Bar */
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.legalLinks a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+  transition: color 0.3s;
+}
+
+.legalLinks a:hover {
+  color: var(--color-gold);
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 60px 0 30px 0;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  .bottomBar {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
