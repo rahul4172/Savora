@@ -74,7 +74,7 @@ export default function HeroSection() {
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
       >
         <img 
-          src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2500&auto=format&fit=crop" 
+          src="'/images/dish_wagyu.png' 
           alt="Cinematic luxury restaurant" 
           className={styles.bgImage}
         />
@@ -321,3 +321,4 @@ export default function HeroSection() {
     </section>
   );
 }
+

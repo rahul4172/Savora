@@ -8,28 +8,28 @@ const dishes = [
     name: 'Truffle Butter Scallops',
     desc: 'Seared scallops with truffle butter, cauliflower puree and micro greens.',
     price: '₹ 1,850',
-    img: 'https://images.unsplash.com/photo-1599084993091-1cb5c0721cc6?q=80&w=2070&auto=format&fit=crop'
+    img: ''/images/truffle_scallops.png'
   },
   {
     badge: 'BEST SELLER',
     name: 'Wagyu Tenderloin',
     desc: 'A5 wagyu with red wine jus, grilled asparagus and roasted garlic.',
     price: '₹ 2,950',
-    img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop'
+    img: ''/images/dish_wagyu.png'
   },
   {
     badge: 'NEW ARRIVAL',
     name: 'Chocolate Sphere',
     desc: 'Dark chocolate mousse, hazelnut praline, and berry coulis.',
     price: '₹ 1,250',
-    img: 'https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=2000&auto=format&fit=crop'
+    img: ''/images/dish_lobster.png'
   },
   {
     badge: 'CHEF\'S SPECIAL',
     name: 'Lobster Thermidor',
     desc: 'Classic thermidor sauce, mornay, truffle oil and parmesan crisp.',
     price: '₹ 2,450',
-    img: 'https://images.unsplash.com/photo-1533622597524-a733303d36ff?q=80&w=2000&auto=format&fit=crop'
+    img: ''/images/dish_caviar.png'
   }
 ];
 
@@ -86,3 +86,4 @@ export default function SignatureDishes() {
     </section>
   );
 }
+

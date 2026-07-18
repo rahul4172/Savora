@@ -7,7 +7,7 @@ const eventsData = [
   {
     id: 'weddings',
     title: 'Wedding Receptions',
-    image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/event_wedding.png',
     editorialTitle: 'A Celebration of Eternal Elegance',
     description: 'Transform your special day into a cinematic masterpiece. Our Grand Ballroom provides a breathtaking canvas of crystal chandeliers, golden candlelight, and bespoke floral arrangements, ensuring every moment is as flawless as your romance.',
     capacity: 'Up to 120 Guests',
@@ -17,7 +17,7 @@ const eventsData = [
   {
     id: 'corporate',
     title: 'Corporate Dining',
-    image: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/event_corporate.png',
     editorialTitle: 'Where Vision Meets Prestige',
     description: 'Elevate your business engagements in an atmosphere of absolute discretion and prestige. Designed for executive guests and private conferences, our modern elegant interiors provide the perfect backdrop for closing deals and celebrating milestones over world-class wine service.',
     capacity: 'Up to 50 Guests',
@@ -27,7 +27,7 @@ const eventsData = [
   {
     id: 'birthday',
     title: 'Birthday Celebrations',
-    image: 'https://images.unsplash.com/photo-1530103862676-de88b9ff68ea?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/event_birthday.png',
     editorialTitle: 'Moments Steeped in Joy',
     description: 'Mark another beautiful year of life surrounded by those who matter most. From an exclusive champagne reception to a theatrical cake presentation, our team curates an atmosphere of warm lighting, elegant celebrations, and unforgettable joy.',
     capacity: 'Up to 30 Guests',
@@ -37,7 +37,7 @@ const eventsData = [
   {
     id: 'chef',
     title: 'Private Chef Experience',
-    image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/event_chef_table.png',
     editorialTitle: 'Culinary Art, Unveiled',
     description: "An exclusive journey into the mind of a culinary master. Sit at the highly coveted Chef's Table and watch as our Executive Chef prepares a live luxury tasting menu exclusively for you, blending personal interaction with premium wine pairings.",
     capacity: '2 to 8 Guests',

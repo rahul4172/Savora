@@ -7,7 +7,7 @@ const galleryItems = [
   {
     id: 1,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800',
+    src: ''/images/gallery_ambience.png',
     label: 'Evening Ambience',
     colSpan: 'span 7',
     rowSpan: 'span 2',
@@ -16,7 +16,7 @@ const galleryItems = [
   {
     id: 2,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/chef_portrait.png',
     label: 'The Culinary Artist',
     colSpan: 'span 5',
     rowSpan: 'span 3',
@@ -25,7 +25,7 @@ const galleryItems = [
   {
     id: 3,
     type: 'video',
-    src: 'https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/menu_bg.png',
     label: 'Behind The Scenes',
     duration: '01:45',
     colSpan: 'span 4',
@@ -35,7 +35,7 @@ const galleryItems = [
   {
     id: 4,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1596683720372-23c2a39a5cc8?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/truffle_scallops.png',
     label: "Chef's Signature",
     colSpan: 'span 3',
     rowSpan: 'span 2',
@@ -44,7 +44,7 @@ const galleryItems = [
   {
     id: 5,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800',
+    src: ''/images/gallery_wine.png',
     label: 'Wine Experience',
     colSpan: 'span 5',
     rowSpan: 'span 2',
@@ -53,7 +53,7 @@ const galleryItems = [
   {
     id: 6,
     type: 'video',
-    src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800',
+    src: ''/images/event_chef_table.png',
     label: 'Fire & Passion',
     duration: '00:58',
     colSpan: 'span 12',
@@ -63,7 +63,7 @@ const galleryItems = [
   {
     id: 7,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/dish_caviar.png',
     label: 'Dessert Finale',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -72,7 +72,7 @@ const galleryItems = [
   {
     id: 8,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1544025162-8111f44d5a92?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/event_corporate.png',
     label: 'Private Events',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -81,7 +81,7 @@ const galleryItems = [
   {
     id: 9,
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1605333396914-2314e365021a?auto=format&fit=crop&q=80&w=600',
+    src: ''/images/dish_wagyu.png',
     label: 'Seasonal Collection',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -195,3 +195,4 @@ export default function GalleryExperience() {
     </section>
   );
 }
+

@@ -54,13 +54,14 @@ export default function ExperienceSection() {
 
         <div className={styles.images}>
           <motion.div className={styles.imgWrapper1} style={{ y: y1 }}>
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior" />
+            <img src="'/images/gallery_ambience.png' alt="Restaurant Interior" />
           </motion.div>
           <motion.div className={styles.imgWrapper2} style={{ y: y2 }}>
-            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=80" alt="Chef plating" />
+            <img src="'/images/chef.png' alt="Chef plating" />
           </motion.div>
         </div>
       </div>
     </section>
   );
 }
+

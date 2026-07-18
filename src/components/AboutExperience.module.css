@@ -31,7 +31,7 @@
 .textureOverlay {
   position: absolute;
   inset: 0;
-  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background: url('/images/media_.png');
   opacity: 0.15;
   pointer-events: none;
   z-index: 0;
@@ -312,3 +312,4 @@
   .stat2 { display: none; }
   .philosophyContent { font-size: 0.95rem; }
 }
+

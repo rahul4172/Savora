@@ -19,14 +19,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, var(--color-bg) 15%, rgba(7,7,7,0.3) 100%), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop') center/cover;
+  background: linear-gradient(90deg, var(--color-bg) 15%, rgba(7,7,7,0.3) 100%), url(''/images/landing_hero.png') center/cover;
   z-index: -1;
   transform: scale(1.05);
   animation: slowZoom 20s ease-out forwards;
 }
 
 :global(.light) .heroBg {
-  background: linear-gradient(90deg, var(--color-bg) 15%, rgba(248,249,250,0.5) 100%), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop') center/cover;
+  background: linear-gradient(90deg, var(--color-bg) 15%, rgba(248,249,250,0.5) 100%), url(''/images/landing_hero.png') center/cover;
 }
 
 @keyframes slowZoom {
@@ -329,3 +329,4 @@
     gap: 40px;
   }
 }
+

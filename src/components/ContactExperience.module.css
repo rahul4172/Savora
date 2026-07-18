@@ -43,7 +43,7 @@
 .textureOverlay {
   position: absolute;
   inset: 0;
-  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background: url('/images/media_.png');
   opacity: 0.15;
   pointer-events: none;
   z-index: 0;
@@ -577,3 +577,4 @@
   .mapButtons { flex-direction: column; }
   .socialSection { flex-direction: column; gap: 24px; }
 }
+

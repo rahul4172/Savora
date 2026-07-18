@@ -73,16 +73,16 @@ export default function AboutExperience() {
           <div className={styles.rightColumn}>
             <div className={styles.collageGrid}>
               <motion.div className={`${styles.collageImg} ${styles.img1}`} variants={itemVariants}>
-                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=800" alt="Chef Plating" />
+                <img src="'/images/chef_portrait.png' alt="Chef Plating" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img2}`} variants={itemVariants}>
-                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=800" alt="Elegant Dining Room" />
+                <img src="'/images/menu_bg.png' alt="Elegant Dining Room" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img3}`} variants={itemVariants}>
-                <img src="https://images.unsplash.com/photo-1596683720372-23c2a39a5cc8?auto=format&fit=crop&q=80&w=800" alt="Fresh Premium Ingredients" />
+                <img src="'/images/truffle_scallops.png' alt="Fresh Premium Ingredients" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img4}`} variants={itemVariants}>
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800" alt="Guests Enjoying Dinner" />
+                <img src="'/images/gallery_ambience.png' alt="Guests Enjoying Dinner" />
               </motion.div>
             </div>
 
@@ -167,3 +167,4 @@ export default function AboutExperience() {
     </section>
   );
 }
+

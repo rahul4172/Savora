@@ -36,12 +36,12 @@ type Dish = {
 };
 
 const menuData: Dish[] = [
-  { id: '1', category: 'Appetizers', name: 'Saffron Butter Garlic Prawns', description: 'Jumbo prawns tossed in saffron infused butter, garlic and fresh herbs.', price: 1150, image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=600', isVeg: false, spiceLevel: 3, isChefRec: true, prepTime: '18 mins' },
-  { id: '2', category: 'Appetizers', name: 'Truffle Burrata Salad', description: 'Creamy burrata, heirloom tomatoes, aged balsamic and black truffle.', price: 950, image: 'https://images.unsplash.com/photo-1608897013039-b2d9d1bd2304?auto=format&fit=crop&q=80&w=600', isVeg: true, spiceLevel: 0, isChefRec: false, prepTime: '12 mins' },
-  { id: '3', category: 'Appetizers', name: 'Herb Crusted Lamb Chops', description: 'Australian lamb cutlets with rosemary crust, served with roasted vegetables.', price: 1350, image: 'https://images.unsplash.com/photo-1544025162-8111f44d5a92?auto=format&fit=crop&q=80&w=600', isVeg: false, spiceLevel: 2, isChefRec: true, prepTime: '20 mins' },
-  { id: '4', category: 'Appetizers', name: 'Crispy Lotus Stem', description: 'Crispy lotus stem with spicy sichuan glaze.', price: 750, image: 'https://images.unsplash.com/photo-1605333396914-2314e365021a?auto=format&fit=crop&q=80&w=600', isVeg: true, spiceLevel: 2, isChefRec: false, prepTime: '15 mins' },
-  { id: '5', category: 'Appetizers', name: 'Tandoori Kalmi Kebab', description: 'Slow cooked chicken with aromatic Indian spices.', price: 850, image: 'https://images.unsplash.com/photo-1599487405270-817684aa530f?auto=format&fit=crop&q=80&w=600', isVeg: false, spiceLevel: 2, isChefRec: false, prepTime: '18 mins' },
-  { id: '6', category: 'Appetizers', name: 'Wild Mushroom Crostini', description: 'Sautéed wild mushrooms, truffle oil, parmesan.', price: 820, image: 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&q=80&w=600', isVeg: true, spiceLevel: 0, isChefRec: false, prepTime: '12 mins' },
+  { id: '1', category: 'Appetizers', name: 'Saffron Butter Garlic Prawns', description: 'Jumbo prawns tossed in saffron infused butter, garlic and fresh herbs.', price: 1150, image: ''/images/saffron_risotto.png', isVeg: false, spiceLevel: 3, isChefRec: true, prepTime: '18 mins' },
+  { id: '2', category: 'Appetizers', name: 'Truffle Burrata Salad', description: 'Creamy burrata, heirloom tomatoes, aged balsamic and black truffle.', price: 950, image: ''/images/dish_truffle_risotto.png', isVeg: true, spiceLevel: 0, isChefRec: false, prepTime: '12 mins' },
+  { id: '3', category: 'Appetizers', name: 'Herb Crusted Lamb Chops', description: 'Australian lamb cutlets with rosemary crust, served with roasted vegetables.', price: 1350, image: ''/images/event_corporate.png', isVeg: false, spiceLevel: 2, isChefRec: true, prepTime: '20 mins' },
+  { id: '4', category: 'Appetizers', name: 'Crispy Lotus Stem', description: 'Crispy lotus stem with spicy sichuan glaze.', price: 750, image: ''/images/dish_wagyu.png', isVeg: true, spiceLevel: 2, isChefRec: false, prepTime: '15 mins' },
+  { id: '5', category: 'Appetizers', name: 'Tandoori Kalmi Kebab', description: 'Slow cooked chicken with aromatic Indian spices.', price: 850, image: ''/images/dish_lobster.png', isVeg: false, spiceLevel: 2, isChefRec: false, prepTime: '18 mins' },
+  { id: '6', category: 'Appetizers', name: 'Wild Mushroom Crostini', description: 'Sautéed wild mushrooms, truffle oil, parmesan.', price: 820, image: ''/images/dish_caviar.png', isVeg: true, spiceLevel: 0, isChefRec: false, prepTime: '12 mins' },
 ];
 
 export default function MenuExperience() {
@@ -105,7 +105,7 @@ export default function MenuExperience() {
       
       {/* Cinematic Background */}
       <div className={styles.bgWrapper}>
-        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&q=80&w=2000" alt="Restaurant Background" className={styles.bgImage} />
+        <img src="'/images/menu_bg.png' alt="Restaurant Background" className={styles.bgImage} />
         <div className={styles.bgOverlay}></div>
       </div>
 
@@ -383,3 +383,5 @@ export default function MenuExperience() {
     </section>
   );
 }
+
+

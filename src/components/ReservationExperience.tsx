@@ -70,10 +70,10 @@ const features = [
 ];
 
 const featuredDishes = [
-  { id: 'd1', name: 'Wagyu Tenderloin', desc: 'A5 Japanese Wagyu, truffle mash, red wine jus', price: 4500, img: 'https://images.unsplash.com/photo-1544025162-8111f44d5a92?w=500&q=80', isVeg: false, spice: 0, isChefRec: true },
-  { id: 'd2', name: 'Truffle Pasta', desc: 'Handmade taglionini, shaved black truffle, parmesan', price: 1850, img: 'https://images.unsplash.com/photo-1621996316585-8167f226d705?w=500&q=80', isVeg: true, spice: 0, isChefRec: true },
-  { id: 'd3', name: 'Chocolate Sphere', desc: 'Valrhona chocolate, melting caramel, gold leaf', price: 1100, img: 'https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=500&q=80', isVeg: true, spice: 0, isChefRec: false },
-  { id: 'd4', name: 'Saffron Prawns', desc: 'Jumbo prawns, saffron butter, garlic, fresh herbs', price: 1150, img: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500&q=80', isVeg: false, spice: 3, isChefRec: true },
+  { id: 'd1', name: 'Wagyu Tenderloin', desc: 'A5 Japanese Wagyu, truffle mash, red wine jus', price: 4500, img: ''/images/event_corporate.png', isVeg: false, spice: 0, isChefRec: true },
+  { id: 'd2', name: 'Truffle Pasta', desc: 'Handmade taglionini, shaved black truffle, parmesan', price: 1850, img: ''/images/dish_truffle_risotto.png', isVeg: true, spice: 0, isChefRec: true },
+  { id: 'd3', name: 'Chocolate Sphere', desc: 'Valrhona chocolate, melting caramel, gold leaf', price: 1100, img: ''/images/chocolate_sphere.png', isVeg: true, spice: 0, isChefRec: false },
+  { id: 'd4', name: 'Saffron Prawns', desc: 'Jumbo prawns, saffron butter, garlic, fresh herbs', price: 1150, img: ''/images/saffron_risotto.png', isVeg: false, spice: 3, isChefRec: true },
 ];
 
 export default function ReservationExperience() {
@@ -599,3 +599,5 @@ export default function ReservationExperience() {
     </section>
   );
 }
+
+
