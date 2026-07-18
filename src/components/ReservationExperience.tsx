@@ -70,7 +70,7 @@ const features = [
 ];
 
 const featuredDishes = [
-  { id: 'd1', name: 'Wagyu Tenderloin', desc: 'A5 Japanese Wagyu, truffle mash, red wine jus', price: 4500, img: '/images/event_corporate.png', isVeg: false, spice: 0, isChefRec: true },
+  { id: 'd1', name: 'Wagyu Tenderloin', desc: 'A5 Japanese Wagyu, truffle mash, red wine jus', price: 4500, img: '/images/dish_wagyu.png', isVeg: false, spice: 0, isChefRec: true },
   { id: 'd2', name: 'Truffle Pasta', desc: 'Handmade taglionini, shaved black truffle, parmesan', price: 1850, img: '/images/dish_truffle_risotto.png', isVeg: true, spice: 0, isChefRec: true },
   { id: 'd3', name: 'Chocolate Sphere', desc: 'Valrhona chocolate, melting caramel, gold leaf', price: 1100, img: '/images/chocolate_sphere.png', isVeg: true, spice: 0, isChefRec: false },
   { id: 'd4', name: 'Saffron Prawns', desc: 'Jumbo prawns, saffron butter, garlic, fresh herbs', price: 1150, img: '/images/saffron_risotto.png', isVeg: false, spice: 3, isChefRec: true },

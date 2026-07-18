@@ -24,7 +24,7 @@ const dishes = [
     id: 1,
     badgeText: 'CHEF\'S SPECIAL',
     badgeIcon: <ChefHat size={12} />,
-    image: '/images/scallops.png',
+    image: '/images/truffle_scallops.png',
     title: 'Truffle Butter Scallops',
     tags: [
       { icon: <WheatOff size={12} />, text: 'Gluten Free' },
@@ -37,7 +37,7 @@ const dishes = [
     id: 2,
     badgeText: 'BEST SELLER',
     badgeIcon: <Star size={12} />,
-    image: '/images/ravioli.png',
+    image: '/images/dish_lobster.png',
     title: 'Lobster Ravioli',
     tags: [
       { icon: <Award size={12} />, text: 'Signature' },
@@ -50,7 +50,7 @@ const dishes = [
     id: 3,
     badgeText: 'NEW ARRIVAL',
     badgeIcon: <Leaf size={12} />,
-    image: '/images/chocolate.png',
+    image: '/images/chocolate_sphere.png',
     title: 'Chocolate Sphere',
     tags: [
       { icon: <Leaf size={12} />, text: 'Vegetarian' },
@@ -63,7 +63,7 @@ const dishes = [
     id: 4,
     badgeText: 'EXCLUSIVE',
     badgeIcon: <Award size={12} />,
-    image: '/images/caviar.png',
+    image: '/images/dish_caviar.png',
     title: 'Beluga Caviar Blini',
     tags: [
       { icon: <Star size={12} />, text: 'Premium' },
@@ -76,7 +76,7 @@ const dishes = [
     id: 5,
     badgeText: 'VEGAN',
     badgeIcon: <Leaf size={12} />,
-    image: '/images/risotto.png',
+    image: '/images/dish_truffle_risotto.png',
     title: 'Golden Saffron Risotto',
     tags: [
       { icon: <Leaf size={12} />, text: 'Vegan' },
