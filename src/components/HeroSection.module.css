@@ -477,6 +477,7 @@
   .editorialLayout { flex-direction: column; justify-content: center; align-items: center; }
   .textContent { width: 100%; text-align: center; align-items: center; display: flex; flex-direction: column; }
   .conciergeWrapper { display: none; }
+  .goldLine { display: none; }
   .mainHeading { font-size: 90px; }
   .scriptHeading { font-size: 110px; top: 40px; left: 50%; transform: translateX(-30%); }
 }
@@ -489,9 +490,9 @@
 @media (max-width: 768px) {
   .hero { min-height: 100svh; }
   .editorialLayout { padding-top: 140px; padding-bottom: 160px; justify-content: flex-start; }
-  .mainHeading { font-size: 56px; }
-  .scriptHeading { font-size: 64px; top: 50px; left: 50%; transform: translateX(-50%); text-align: center; width: 100%;}
-  .titleGroup { margin-bottom: 60px; }
+  .mainHeading { font-size: 56px; margin-bottom: 0; }
+  .scriptHeading { position: relative; font-size: 64px; top: 0; left: 0; transform: none; text-align: center; display: block; margin: -10px auto 0 auto; }
+  .titleGroup { margin-bottom: 60px; display: flex; flex-direction: column; align-items: center; }
   .buttonGroup { flex-direction: column; gap: 16px; margin-bottom: 40px; width: 100%; padding: 0 20px; }
   .socialProof { flex-direction: column; gap: 16px; }
   .proofDivider { width: 50px; height: 1px; }
@@ -502,7 +503,7 @@
 
 @media (max-width: 480px) {
   .mainHeading { font-size: 42px; }
-  .scriptHeading { font-size: 48px; top: 42px; }
+  .scriptHeading { font-size: 48px; top: 0; margin-top: -5px; }
   .titleGroup { margin-bottom: 50px; }
   .btnPremium, .btnGlass { padding: 16px 24px; width: 100%; text-align: center; }
   .editorialLayout { padding-top: 120px; padding-bottom: 140px; }
