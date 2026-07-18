@@ -497,6 +497,7 @@
   .proofDivider { width: 50px; height: 1px; }
   .poeticDesc { font-size: 0.95rem; padding: 0 20px; }
   .luxuryLabel { margin-bottom: 32px; }
+  .scrollIndicator { display: none; }
 }
 
 @media (max-width: 480px) {
