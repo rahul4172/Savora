@@ -5,6 +5,7 @@ import GalleryPage from './pages/GalleryPage';
 import EventsPage from './pages/EventsPage';
 import AboutPage from './pages/AboutPage';
 import MenuPage from './pages/MenuPage';
+import AdminLoginPage from './pages/AdminLoginPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/events" element={<EventsPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/menu" element={<MenuPage />} />
+          <Route path="/admin/login" element={<AdminLoginPage />} />
           {/* We will add /admin, etc. here in subsequent phases */}
         </Routes>
       </div>

@@ -1,6 +1,6 @@
 import { motion, useScroll, useMotionValueEvent, useSpring, useMotionValue, useTransform, AnimatePresence } from 'framer-motion';
 import styles from './Navbar.module.css';
-import { User, Sun, Menu, X } from 'lucide-react';
+import { User, Menu, X } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
@@ -121,8 +121,9 @@ export default function Navbar() {
             
             {/* DESKTOP ACTIONS */}
             <div className={styles.actions}>
-              <button className={styles.iconCircleBtn}><Sun size={18} strokeWidth={1.5} /></button>
-              <button className={styles.iconCircleBtn}><User size={18} strokeWidth={1.5} /></button>
+              <button className={styles.iconCircleBtn} onClick={() => navigate('/admin/login')} aria-label="Admin Login">
+                <User size={18} strokeWidth={1.5} />
+              </button>
               
               <motion.button 
                 className={styles.premiumBtn}
