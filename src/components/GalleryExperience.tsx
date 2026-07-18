@@ -7,7 +7,7 @@ const galleryItems = [
   {
     id: 1,
     type: 'image',
-    src: ''/images/gallery_ambience.png',
+    src: '/images/gallery_ambience.png',
     label: 'Evening Ambience',
     colSpan: 'span 7',
     rowSpan: 'span 2',
@@ -16,7 +16,7 @@ const galleryItems = [
   {
     id: 2,
     type: 'image',
-    src: ''/images/chef_portrait.png',
+    src: '/images/chef_portrait.png',
     label: 'The Culinary Artist',
     colSpan: 'span 5',
     rowSpan: 'span 3',
@@ -25,7 +25,7 @@ const galleryItems = [
   {
     id: 3,
     type: 'video',
-    src: ''/images/menu_bg.png',
+    src: '/images/menu_bg.png',
     label: 'Behind The Scenes',
     duration: '01:45',
     colSpan: 'span 4',
@@ -35,7 +35,7 @@ const galleryItems = [
   {
     id: 4,
     type: 'image',
-    src: ''/images/truffle_scallops.png',
+    src: '/images/truffle_scallops.png',
     label: "Chef's Signature",
     colSpan: 'span 3',
     rowSpan: 'span 2',
@@ -44,7 +44,7 @@ const galleryItems = [
   {
     id: 5,
     type: 'image',
-    src: ''/images/gallery_wine.png',
+    src: '/images/gallery_wine.png',
     label: 'Wine Experience',
     colSpan: 'span 5',
     rowSpan: 'span 2',
@@ -53,7 +53,7 @@ const galleryItems = [
   {
     id: 6,
     type: 'video',
-    src: ''/images/event_chef_table.png',
+    src: '/images/event_chef_table.png',
     label: 'Fire & Passion',
     duration: '00:58',
     colSpan: 'span 12',
@@ -63,7 +63,7 @@ const galleryItems = [
   {
     id: 7,
     type: 'image',
-    src: ''/images/dish_caviar.png',
+    src: '/images/dish_caviar.png',
     label: 'Dessert Finale',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -72,7 +72,7 @@ const galleryItems = [
   {
     id: 8,
     type: 'image',
-    src: ''/images/event_corporate.png',
+    src: '/images/event_corporate.png',
     label: 'Private Events',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -81,7 +81,7 @@ const galleryItems = [
   {
     id: 9,
     type: 'image',
-    src: ''/images/dish_wagyu.png',
+    src: '/images/dish_wagyu.png',
     label: 'Seasonal Collection',
     colSpan: 'span 4',
     rowSpan: 'span 2',
@@ -195,4 +195,5 @@ export default function GalleryExperience() {
     </section>
   );
 }
+
 

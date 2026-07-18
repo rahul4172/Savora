@@ -74,7 +74,7 @@ export default function HeroSection() {
         transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
       >
         <img 
-          src="'/images/dish_wagyu.png' 
+          src="/images/landing_hero.png" 
           alt="Cinematic luxury restaurant" 
           className={styles.bgImage}
         />

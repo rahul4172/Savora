@@ -8,28 +8,28 @@ const dishes = [
     name: 'Truffle Butter Scallops',
     desc: 'Seared scallops with truffle butter, cauliflower puree and micro greens.',
     price: '₹ 1,850',
-    img: ''/images/truffle_scallops.png'
+    img: '/images/truffle_scallops.png'
   },
   {
     badge: 'BEST SELLER',
     name: 'Wagyu Tenderloin',
     desc: 'A5 wagyu with red wine jus, grilled asparagus and roasted garlic.',
     price: '₹ 2,950',
-    img: ''/images/dish_wagyu.png'
+    img: '/images/dish_wagyu.png'
   },
   {
     badge: 'NEW ARRIVAL',
     name: 'Chocolate Sphere',
     desc: 'Dark chocolate mousse, hazelnut praline, and berry coulis.',
     price: '₹ 1,250',
-    img: ''/images/dish_lobster.png'
+    img: '/images/dish_lobster.png'
   },
   {
     badge: 'CHEF\'S SPECIAL',
     name: 'Lobster Thermidor',
     desc: 'Classic thermidor sauce, mornay, truffle oil and parmesan crisp.',
     price: '₹ 2,450',
-    img: ''/images/dish_caviar.png'
+    img: '/images/dish_caviar.png'
   }
 ];
 
@@ -86,4 +86,5 @@ export default function SignatureDishes() {
     </section>
   );
 }
+
 

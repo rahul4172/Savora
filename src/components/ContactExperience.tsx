@@ -205,7 +205,7 @@ export default function ContactExperience() {
         {/* Interactive Map Section */}
         <motion.div className={styles.mapSection} variants={itemVariants}>
           <div className={styles.mapImageWrapper}>
-            <img src="'/images/luxury_dining_room.png' alt="Savora Entrance" className={styles.mapImage} />
+            <img src="/images/luxury_dining_room.png" alt="Savora Entrance" className={styles.mapImage} />
             <div className={styles.mapOverlay}></div>
             
             <div className={styles.locationCard}>
@@ -248,4 +248,6 @@ export default function ContactExperience() {
     </section>
   );
 }
+
+
 

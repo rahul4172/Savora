@@ -73,16 +73,16 @@ export default function AboutExperience() {
           <div className={styles.rightColumn}>
             <div className={styles.collageGrid}>
               <motion.div className={`${styles.collageImg} ${styles.img1}`} variants={itemVariants}>
-                <img src="'/images/chef_portrait.png' alt="Chef Plating" />
+                <img src="/images/chef_portrait.png" alt="Chef Plating" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img2}`} variants={itemVariants}>
-                <img src="'/images/menu_bg.png' alt="Elegant Dining Room" />
+                <img src="/images/menu_bg.png" alt="Elegant Dining Room" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img3}`} variants={itemVariants}>
-                <img src="'/images/truffle_scallops.png' alt="Fresh Premium Ingredients" />
+                <img src="/images/truffle_scallops.png" alt="Fresh Premium Ingredients" />
               </motion.div>
               <motion.div className={`${styles.collageImg} ${styles.img4}`} variants={itemVariants}>
-                <img src="'/images/gallery_ambience.png' alt="Guests Enjoying Dinner" />
+                <img src="/images/gallery_ambience.png" alt="Guests Enjoying Dinner" />
               </motion.div>
             </div>
 
@@ -167,4 +167,6 @@ export default function AboutExperience() {
     </section>
   );
 }
+
+
 
